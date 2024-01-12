@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bike Specifications</title>
+  <style>
+    #spec-container {
+      display: none;
+    }
+
+    
+  </style>
+</head>
+<body>
+    <header>
+        <img src="https://www.bing.com/th?id=OIP.CYNCbyWmnHe4yRBzuXRh_wHaC9&w=269&h=106&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2">
+        <button type="menu"><a href="seat.html"> More</a></button>
+        <button type="menu"><a href="bike.html"> Back</a></button>
+      </header>
+     
+
+
+    
+  <h1>CHANGE THE COLOUR OF BIKE</h1>
+  <div>
+    <!-- Buttons to trigger icon and information change -->
+    <button onclick="changeContent('https://www.yamaha-motor-india.com/theme/v3/image/webp/fzx/color/color-01.webp', 'YAMAHA R3 BLUE')">Copper</button>
+    <button onclick="changeContent('https://www.yamaha-motor-india.com/theme/v3/image/webp/fzx/color/color-03.webp?v=2', 'YAMAHA R3 BLACK')">Black</button>
+    <button onclick="changeContent('https://www.yamaha-motor-india.com/theme/v3/image/webp/fzx/color/color-02.webp?v=2', 'YAMAHA R3 BLACK')">Blue</button>
+   
+    
+    
+    
+  </div>
+  
+  <div id="info-container">
+    <!-- Icon and information container -->
+    <img id="icon" src="https://www.yamaha-motor-india.com/theme/v3/image/webp/fzx/color/color-01.webp?v=2" alt="Icon">
+    
+
+  
+
+
+
+<script>
+    // JavaScript function to change icon and information
+    function changeContent(iconSrc, newInfo) {
+      document.getElementById('icon').src = iconSrc;
+      document.getElementById('info').innerText = newInfo;
+    }
+  
+       
+      
+    
+   
+  </script>
+  
+
+</body>
+</html>

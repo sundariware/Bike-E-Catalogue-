@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    background-size: cover;
+    color: blueviolet; /* Set text color to be visible against the background */
+    text-align: center;
+}
+
+h1 {
+    font-size: 2em;
+    
+}
+.section{
+    color: #000;
+    text-align: center;
+}
+
+
+header {
+    background-color: #fff;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+.explore-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-decoration: none;
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+
+.explore-button:hover {
+    background-color: #555;
+}

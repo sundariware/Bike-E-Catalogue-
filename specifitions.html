@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bike Specifications</title>
+  <style>
+    #spec-container {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Bike Specifications Viewer</h1>
+
+  <button onclick="showSpecifications('engine')">View Engine Specifications</button>
+  <button onclick="showSpecifications('other')">View Other Specifications</button>
+
+  <div id="spec-container">
+    <h2>Specifications</h2>
+    <p id="spec-content"></p>
+  </div>
+
+  <script>
+    function showSpecifications(type) {
+      var specContainer = document.getElementById('spec-container');
+      var specContent = document.getElementById('spec-content');
+
+      // Clear previous content
+      specContent.innerHTML = '';
+
+      // Update content based on the button clicked
+      if (type === 'engine') {
+        specContent.innerHTML = 'Engine: 4-stroke,2-cylinder, Liquid-cooled, DOHC, 4-valves';
+        specContent.innerHTML = 'Displacement: 321cc';
+        specContent.innerHTML = 'Engine: 4-stroke,2-cylinder, Liquid-cooled, DOHC, 4-valves';
+
+      } else if (type === 'other') {
+        specContent.innerHTML = 'Other Specifications: XYZ';
+      }
+
+      // Show the specifications container
+      specContainer.style.display = 'block';
+    }
+  </script>
+
+</body>
+</html>
